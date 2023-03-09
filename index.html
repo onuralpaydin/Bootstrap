@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#menu").menu();
+        });
+    </script>
+    <style>
+        .ui-menu {
+            width: 100%;
+        }
+         #doruk:hover{
+            background-color: chartreuse;
+         }
+         .m-3{
+            background-color: aquamarine;
+         }
+         #baslik{
+margin: 50px;
+         }
+    </style>
+    <script src="app.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="m-3" id="baslik">Alışverişin Tek Adresi</h1>
+        <nav>
+            <ul class="d-flex justify-content-end ">
+                <li class="list-unstyled m-2"><a href="login-page.html" class="btn btn-info">Giriş Yap</a> </li>
+                <li class="list-unstyled m-2"><a href="register-page.html" class="btn btn-info">Kayıt Ol</a></li>
+                <li class="list-unstyled m-2 "><a id="doruk" href="register-page-grid.html" class="btn btn-info">Grid Giriş</a>
+                </li>
+            </ul>
+        </nav class="m-4">
+        <ul id="menu" class="d-flex">
+            <li class="ui-state-disabled">
+                <div>Toys (n/a)</div>
+            </li>
+            <li>
+                <div>Açelya</div>
+            </li>
+            <li>
+                <div>Ali Samet</div>
+            </li>
+            <li>
+                <div>Doruk</div>
+                <ul>
+                    <li class="ui-state-disabled">
+                        <div>Ebubekir</div>
+                    </li>
+                    <li>
+                        <div>Halil</div>
+                    </li>
+                    <li>
+                        <div>Taha</div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div>Movies</div>
+            </li>
+            <li>
+                <div>Music</div>
+                <ul>
+                    <li>
+                        <div>Rock</div>
+                        <ul>
+                            <li>
+                                <div>Alternative</div>
+                            </li>
+                            <li>
+                                <div>Classic</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>Jazz</div>
+                        <ul>
+                            <li>
+                                <div>Freejazz</div>
+                            </li>
+                            <li>
+                                <div>Big Band</div>
+                            </li>
+                            <li>
+                                <div>Modern</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>Pop</div>
+                    </li>
+                </ul>
+            </li>
+            <li class="ui-state-disabled">
+                <div>Specials (n/a)</div>
+            </li>
+        </ul>
+        <div class="row mt-5">
+            <div class="col-md-4 bg-danger me-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNKqWb72ODjSn6UFPf2HM-x6HsuGiRmtPvz4Vh92shysQzlQtnq__4QYSsYEBEmnyvchU&usqp=CAU"
+                        alt="" width="100%" height="100%" onclick="alert('Taha bunu sepete ekledi.')">
+                    <p>Audi</p>
+                    <p>9999999₺</p>
+                    <p>2018 model</p>
+                </div>
+            </div>
+            <div class="col-md-3 bg-info me-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNKqWb72ODjSn6UFPf2HM-x6HsuGiRmtPvz4Vh92shysQzlQtnq__4QYSsYEBEmnyvchU&usqp=CAU"
+                        alt="" width="100%" height="100%">
+                    <p>Audi</p>
+                    <p>9999999₺</p>
+                    <p>2018 model</p>
+                </div>
+            </div>
+            <div class="col-md-4 bg-warning">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNKqWb72ODjSn6UFPf2HM-x6HsuGiRmtPvz4Vh92shysQzlQtnq__4QYSsYEBEmnyvchU&usqp=CAU"
+                        alt="" width="100%" height="100%">
+                    <p>Audi</p>
+                    <p>9999999₺</p>
+                    <p>2018 model</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4 bg-danger me-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNKqWb72ODjSn6UFPf2HM-x6HsuGiRmtPvz4Vh92shysQzlQtnq__4QYSsYEBEmnyvchU&usqp=CAU"
+                        alt="" width="100%" height="100%">
+                    <p>Audi</p>
+                    <p>9999999₺</p>
+                    <p>2018 model</p>
+                </div>
+            </div>
+            <div class="col-md-3 bg-info me-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNKqWb72ODjSn6UFPf2HM-x6HsuGiRmtPvz4Vh92shysQzlQtnq__4QYSsYEBEmnyvchU&usqp=CAU"
+                        alt="" width="100%" height="100%">
+                    <p>Audi</p>
+                    <p>9999999₺</p>
+                    <p>2018 model</p>
+                </div>
+            </div>
+            <div class="col-md-4 bg-warning">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNKqWb72ODjSn6UFPf2HM-x6HsuGiRmtPvz4Vh92shysQzlQtnq__4QYSsYEBEmnyvchU&usqp=CAU"
+                        alt="" width="100%" height="100%">
+                    <p>Audi</p>
+                    <p>9999999₺</p>
+                    <p>2018 model</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4 bg-danger me-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNKqWb72ODjSn6UFPf2HM-x6HsuGiRmtPvz4Vh92shysQzlQtnq__4QYSsYEBEmnyvchU&usqp=CAU"
+                        alt="" width="100%" height="100%">
+                    <p>Audi</p>
+                    <p>9999999₺</p>
+                    <p>2018 model</p>
+                </div>
+            </div>
+            <div class="col-md-3 bg-info me-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNKqWb72ODjSn6UFPf2HM-x6HsuGiRmtPvz4Vh92shysQzlQtnq__4QYSsYEBEmnyvchU&usqp=CAU"
+                        alt="" width="100%" height="100%">
+                    <p>Audi</p>
+                    <p>9999999₺</p>
+                    <p>2018 model</p>
+                </div>
+            </div>
+            <div class="col-md-4 bg-warning">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNKqWb72ODjSn6UFPf2HM-x6HsuGiRmtPvz4Vh92shysQzlQtnq__4QYSsYEBEmnyvchU&usqp=CAU"
+                        alt="" width="100%" height="100%">
+                    <p>Audi</p>
+                    <p>9999999₺</p>
+                    <p>2018 model</p>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 bg-danger">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 bg-success">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 bg-info">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 bg-primary">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 bg-secondary">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 bg-dark">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
